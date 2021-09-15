@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  
+		<bean class="com.mypackage.Department" id="dept">
+		
+			<property name="deptName" value="Computer system"/>   
+			
+			<property name="deptCode" value="CS"/>
+		</bean>  
+		
+		<bean class="com.mypackage.Student" id="student">
+		
+		<property name="studentName" value="Ayoob"/>
+		
+		<property name="rollNumber" value="18CS85"></property>
+		
+		<property name="department" ref="dept"></property>
+		
+		</bean>
+  
+</beans>  
